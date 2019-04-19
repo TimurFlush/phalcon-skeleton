@@ -1,9 +1,9 @@
 <?php
 
+use Phalcon\Mvc\Router;
+
 return new Phalcon\Config(
     [
-        'uriSource' => \Phalcon\Mvc\Router::URI_SOURCE_GET_URL,
-
         'defaultHttpHeaders' => [
             'X-XSS-Protection' => '1; mode=block'
         ],
@@ -17,6 +17,7 @@ return new Phalcon\Config(
 
         'services' => [
             'router' => [
+                'uriSource' => Router::URI_SOURCE_GET_URL,
                 'groups' => [
                     \app\routes\SiteRoutes::class
                 ]

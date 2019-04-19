@@ -12,7 +12,7 @@ class Router implements \Phalcon\Di\ServiceProviderInterface
             $router = new MvcRouter();
 
             $router->setUriSource(
-                empty(config()->uriSource)
+                empty(config()->services->router->uriSource)
                     ? MvcRouter::URI_SOURCE_GET_URL
                     : config()->uriSource
             );
