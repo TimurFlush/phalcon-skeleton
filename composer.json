@@ -1,0 +1,21 @@
+{
+  "name": "timur-flush/project241",
+  "autoload": {
+    "files": [
+      "app/Bootstrap.php",
+      "app/helpers/common.php"
+    ]
+  },
+  "require": {
+    "php": "^7.2.0",
+    "ext-phalcon": "^3.4",
+    "phalcon/ide-stubs": "^3.4",
+    "vlucas/phpdotenv": "^3.3.3",
+    "nesbot/carbon": "^2.17.0",
+    "timur-flush/math": "^1.3.0",
+    "monolog/monolog": "1.24.0",
+    "rahimi/monolog-telegram": "^1.0.6",
+    "mead-steve/mono-snag": "^3.0.0",
+    "filp/whoops": "^2.3.1"
+  }
+}
